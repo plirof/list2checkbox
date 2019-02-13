@@ -14,10 +14,30 @@ $myarray = file($filename);
 $debug=false; //if($debug)
 $debug2=false;
 
-$table_column0_name="lesson name";
-$table_column3_name="10dimA2";
-$table_column1_name="10dimB1";
-$table_column2_name="15dimΓ1";
+$table_column_name[0]="lesson name";
+$table_column_name[1]="10dimA1";
+$table_column_name[2]="10dimA2";
+$table_column_name[3]="10dimB1";
+$table_column_name[4]="10dimB2";
+$table_column_name[5]="10dimΓ1";
+
+$table_column_name[7]="10dimΔ1";
+
+$table_column_name[9]="10dimΕ1";
+
+$table_column_name[11]="10dimΣΤ1";
+
+$table_column_name[21]="15dimA1";
+$table_column_name[22]="15dimA2";
+$table_column_name[23]="15dimB1";
+$table_column_name[24]="15dimB2";
+$table_column_name[25]="15dimΓ1";
+
+$table_column_name[27]="15dimΔ1";
+
+$table_column_name[29]="15dimΕ1";
+
+$table_column_name[211]="15dimΣΤ1";
 
 require_once "file2checkbox.php";
 ?>

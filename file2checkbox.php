@@ -15,12 +15,26 @@ if(!isSet($debug))$debug=false; //if($debug)
 if(!isSet($debug2))$debug2=false;
 if(!isSet($debug3))$debug3=false;
 
-if(!isSet($table_column0_name))$table_column0_name="Name";
-if(!isSet($table_column1_name))$table_column1_name="Tried-Checked";
-if(!isSet($table_column2_name))$table_column2_name="problem";
-if(!isSet($table_column3_name))$table_column3_name="Nice";
-if(!isSet($table_column4_name))$table_column4_name="comments";
 
+//$table_column_name[0]
+
+
+
+if(!isSet($table_column_name[0]))$table_column_name[0]="Name";
+if(!isSet($table_column_name[1]))$table_column_name[1]="class1";
+if(!isSet($table_column_name[2]))$table_column_name[2]="class2";
+if(!isSet($table_column_name[3]))$table_column_name[3]="class3";
+if(!isSet($table_column_name[4]))$table_column_name[4]="comments";
+
+$counted_columns=count($table_column_name);
+//if($debug) print_r($counted_columns);
+
+$table_th_text="\n";
+//for($i=0;$i<$counted_columns;$i++){
+foreach ($table_column_name as $name){	
+	//$table_th_text=$table_th_text.'<th>'.$table_column_name[$i].'</th>';
+	$table_th_text=$table_th_text.'<th>'.$name.'</th>';
+}
 
 //Create backup
 if(!file_exists($filename.".orig")){
@@ -40,7 +54,11 @@ if($debug)echo "<h3>ORIGINAL myarray</h3>";
 if($debug) print_r($myarray);
 print "<form action='' method='post' name='hello' >\n";
 print"<table border=1>";
-print "<th>$table_column0_name</th><th>$table_column1_name</th><th>$table_column2_name</th><th>$table_column3_name</th><th>$table_column4_name</th><tr>";
+print $table_th_text;
+print '<tr>';
+//print "<th>$table_column_name[0]</th><th>$table_column_name[1]</th><th>$table_column_name[2]</th><th>$table_column_name[3]</th><th>$table_column_name[4]</th><tr>";
+
+
 // get number of elements in array with count
 $count = -1; // Foreach with counter is probably best here
 foreach ($myarray as $line) {
@@ -53,6 +71,13 @@ foreach ($myarray as $line) {
 	$check1="";
 	$check2="";
 	$check3="";
+	foreach ($par as $currect_column_value){
+		$check1="";
+		if(isSet($currect_column_value)) 	if (substr($currect_column_value, 0, 4)=="yes1") {$check1="checked"; }
+		print "<td><input type='checkbox' name='column_1[$count]' value='yes1-line:$count' $check1/> </td>";
+	}	
+
+/*
 	if(isSet($par[1])) 	if (substr($par[1], 0, 4)=="yes1") {$check1="checked"; }
 	if(isSet($par[2])) 	if (substr($par[2], 0, 4)=="yes2") {$check2="checked";}
 	if(isSet($par[3])) 	if (substr($par[3], 0, 4)=="yes3") {$check3="checked";}
@@ -61,6 +86,7 @@ foreach ($myarray as $line) {
     print "<td><input type='checkbox' name='column_2[$count]' value='yes2-line:$count' $check2 /> </td>";
 	print "<td><input type='checkbox' name='column_3[$count]' value='yes3-line:$count' $check3 /> </td>";
 	print "<td><input type='text' size=50 name='comments[$count]' value='".$par[4]."' /> </td>";
+	*/
 	print "</tr><tr>\n";
 
 

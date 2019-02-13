@@ -1,7 +1,7 @@
 dim10-A|20180920|ALL CLASSES _ typing_bricks(puzzle)!!!.swf , airtyper_1.swf|::yes1 ::nop2::nop3::
-dim10-A|20180926|A1 : funbrain_com_SimonSees.swf ,funbrain , A2:|::nop1::yes2::nop3::
-dim10-A|20181003|A1,2 :colorgame(sheppardsoftware.com)_preschool.swf (again),buscounting, A1 :Your-Face.swf , A2: coloring_1bear.swf (toys arese)|ΤΕΤΑΡΤΗ::nop1::nop2::yes3::
-dim10-A|20181010|A1,2 :Diego_Dinosaur_Rescue_maze_KIDS_simple_NotTImed_!!!.swf, labrat_(maze-kids)!!.swf , WORD (σε λιγους που βαρεθήκαν)|ΤΕΤΑΡΤΗ,ΠΑΡΑΣΚΕΥΗ::nop1::nop2::nop3::
+dim10-A|20180926|A1 : funbrain_com_SimonSees.swf ,funbrain , A2:|::nop1::nop2::nop3::
+dim10-A|20181003|A1,2 :colorgame(sheppardsoftware.com)_preschool.swf (again),buscounting, A1 :Your-Face.swf , A2: coloring_1bear.swf (toys arese)|ΤΕΤΑΡΤΗ::yes1 ::nop2::nop3::
+dim10-A|20181010|A1,2 :Diego_Dinosaur_Rescue_maze_KIDS_simple_NotTImed_!!!.swf, labrat_(maze-kids)!!.swf , WORD (σε λιγους που βαρεθήκαν)|ΤΕΤΑΡΤΗ,ΠΑΡΑΣΚΕΥΗ::yes1 ::nop2::nop3::
 dim10-A|20181016|A2,1: tuxpaint πινέλα, σφραγίδες (A2 φάνηκε να βαριέται)|ΤΕΤΑΡΤΗ, Α1 ΠΑΡΑΣΚΕΥΗ::nop1::nop2::nop3::
 dim10-A2|20181023|A2 - tuxmath (patame arithmous ως πραξεις 0-3- παιξαν 25 λεπτα περιπου) ,tuxpaint (A1 -EXASE ΜΑΘΗΜΑ)|ΤΕΤΑΡΤΗ::nop1::nop2::nop3::
 dim10-A|20181102|Α2 -gcompris (2 πρωτες επιλογες δεξια)|ΠΑΡΑΣΚΕΥΗ::nop1::nop2::nop3::
