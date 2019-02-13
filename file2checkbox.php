@@ -7,6 +7,13 @@ to do:
 -variable columns
 -select text file from menu
 -(might not be a point to it) GET text file from url
+
+
+to check :
+https://stackoverflow.com/questions/4769148/accessing-an-associative-array-by-integer-index-in-php
+$keys = array_keys($my_arr);
+$my_arr[$keys[1]] = "not so much bling";
+
 */
 
 if(!isSet($filename))$filename = "!hiddenObject_1502_a_list.txt";
@@ -27,13 +34,14 @@ if(!isSet($table_column_name[3]))$table_column_name[3]="class3";
 if(!isSet($table_column_name[4]))$table_column_name[4]="comments";
 
 $counted_columns=count($table_column_name);
+$keys = array_keys($table_column_name);
 //if($debug) print_r($counted_columns);
 
 $table_th_text="\n";
-//for($i=0;$i<$counted_columns;$i++){
-foreach ($table_column_name as $name){	
-	//$table_th_text=$table_th_text.'<th>'.$table_column_name[$i].'</th>';
-	$table_th_text=$table_th_text.'<th>'.$name.'</th>';
+for($i=0;$i<$counted_columns;$i++){
+//foreach ($table_column_name as $name){	
+	$table_th_text=$table_th_text.'<th>'.$table_column_name[$keys[$i]].'</th>';
+	//$table_th_text=$table_th_text.'<th>'.$name.'</th>';
 }
 
 //Create backup
@@ -113,6 +121,16 @@ if($debug)var_dump($_POST);
 if($debug)echo "<hr>";
 if($debug2)var_dump($_POST["column_1"]);
 if($debug)echo "<hr>";
+
+
+
+for($i=1;$i<$counted_columns;$i++){
+//foreach ($table_column_name as $name){	
+	$table_th_text=$table_th_text.'<th>'.$table_column_name[$keys[$i]].'</th>';
+	//$table_th_text=$table_th_text.'<th>'.$name.'</th>';
+}
+
+
 // column 1+++++++++++++++++++++++++++++++++++
 $count1=0;
 if(isSet($_POST["column_1"])){
