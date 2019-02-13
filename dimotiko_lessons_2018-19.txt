@@ -1,3 +1,25 @@
-dim10-A|20180920|ALL CLASSES _ typing_bricks(puzzle)!!!.swf , airtyper_1.swf|::yes1 ::nop2::nop3::
-dim10-A|20180926|A1 : funbrain_com_SimonSees.swf ,funbrain , A2:|::nop1::nop2::nop3::
-
+dim10-A|20180920|ALL CLASSES _ typing_bricks(puzzle)!!!.swf , airtyper_1.swf|::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A|20180926|A1 : funbrain_com_SimonSees.swf ,funbrain , A2:|::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A|20181003|A1,2 :colorgame(sheppardsoftware.com)_preschool.swf (again),buscounting, A1 :Your-Face.swf , A2: coloring_1bear.swf (toys arese)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A|20181010|A1,2 :Diego_Dinosaur_Rescue_maze_KIDS_simple_NotTImed_!!!.swf, labrat_(maze-kids)!!.swf , WORD (σε λιγους που βαρεθήκαν)|ΤΕΤΑΡΤΗ,ΠΑΡΑΣΚΕΥΗ::yes1 ::yes1 ::yes1 ::yes1 ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A|20181016|A2,1: tuxpaint πινέλα, σφραγίδες (A2 φάνηκε να βαριέται)|ΤΕΤΑΡΤΗ, Α1 ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20181023|A2 - tuxmath (patame arithmous ως πραξεις 0-3- παιξαν 25 λεπτα περιπου) ,tuxpaint (A1 -EXASE ΜΑΘΗΜΑ)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A|20181102|Α2 -gcompris (2 πρωτες επιλογες δεξια)|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A|20181114|A2: http://192.168.1.200/swf/ab/Phineas-E-Ferb-coloring.swf , shapesonact_(same_each_time)1stGrade.swf , http://192.168.1.200/swf/fun/super-mario-racing-2.swf (ΕΧΕΙ ADs) ,Α1 ΠΑΡΑΣΚΕΥΗ(17ΝΟΕ -ΑΡΓΙΑ)|ΤΕΤΑΡΤΗ, Α1 ΠΑΡΑΣΚΕΥΗ(ΔΕΝ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A1|20181121|A1: gcompris (2 πρωτες επιλογες δεξια)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20181123|Α2 : /opt/eduActiv8/eduActiv8 Γλωσικές Τέχνες->Ανακαλύψτε τα γραμματα|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A|20181127|A1: eduactiv8 Γλωσικές Τέχνες->Ανακαλύψτε τα γραμματα (ως πρωτο λαβυρινθο) (την άλλη τεταρτη 6δεκ να βαλω finding-santa_(christmas_find)_!!.swf)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20181130|Α2 : Kids-Coloring-Book-many-images__noNavigateToURL3.swf , finding-santa (ΔΥΣΚΟΛΕΥΤΗΚΑΝ ΟΙ ΠΙΟ ΠΟΛΛΟΙ)|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A1|20181205|A1: funbrain.html (kai thn teleytaia ebdomafa να βαλω funbrain.html , finding-santa_(christmas_find)_!!.swf)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20181214|Α2 : frogger3d.sw (dyskoleytikan poly) , christmas hidden objects|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A1|20190116|Α1:eduactiv8 Σχηματισμός Λέξεων-> ζώα , δουλείες ,ρούχα)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20190117|Α2:eduactiv8 Σχηματισμός Λέξεων-> ζώα , δουλείες ,ρούχα)|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A1|20190122|A1 : games $SWFlocal"pack_A01.html , τους άρεσε arrange_castle_doll_house , paint_artpad_y8_noNavAdUrl.swf (καλή ζωγραφική. Να το βάζω στην 6η θεση)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20190125|A2 : $SWFlocal"pack_A01.html , (καλή ζωγραφική. Να το βάζω στην 6η θεση)|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20190201|A2: ironstart ""$SWFlocal"ab/funbrain_com/funbrain.html " games 1-6|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A1|20190122|A1 : ironstart ""$SWFlocal"ab/funbrain_com/funbrain.html "|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A1|20190206|ironstart ""$SWFlocal"pack_A02.html " (τους αρεσε το coloring doodle)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20190208|ironstart ""$SWFlocal"pack_A02.html "|ΠΑΡΑΣΚΕΥΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A1|20190213|A1: ironstart ""$SWFlocal"pack_A03.html " (δυσκολευτηκαν λιγο στο basket μαθηματικα)|ΤΕΤΑΡΤΗ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+dim10-A2|20190208|ironstart ""$SWFlocal"pack_A03.html "|ΠΑΡΑΣΚΕΥΗ next::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1
+|201902118-24|apokries part 1 ramkid,prosklisi : dim15-A, dim15-B, dim15-Γ, dim15-Δ, dim15-E, dim15-ST, dim10-A1, dim10-A2, dim10-B, dim10-Γ1, dim10-Γ2, dim10-Δ, dim10-E1, dim10-E2, dim10-ST1, dim10-ST2, ironstartincognito ""$SWFgiortes"other/ramkid_invitation_party/index.html "$RAMKIDpathprefix"KidsPedia/kids_ePedia32cd/Volume13/index_kd_vol.html ΑΠΟΚΡΙΕΣ-ramkidpedia "$SWFlocal"swf_ramkid_cds2k5/Ramkid_12feb_apokries/index.html "$SWFlocal"pack_A02.html"|ΔΕΥΤΕΡΑ,ΤΡΙΤΗ,ΤΕΤΑΡΤΗ,ΠΕΜΠΤΗ,ΠΑΡΑΣΚΕΥΗ next ::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1::nop1

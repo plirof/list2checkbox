@@ -24,7 +24,7 @@ if(!isSet($debug3))$debug3=false;
 
 
 //$table_column_name[0]
-print_r($_POST);
+if($debug3)print_r($_POST);
 //var_dump($_POST);
 
 
@@ -71,6 +71,7 @@ print '<tr>';
 // get number of elements in array with count
 $line_counter = -1; // Foreach with counter is probably best here
 foreach ($array_of_file as $line) {
+  //if(strlen($line)<5)continue;	
   $line_counter++; // increment the counter
   $par = $line;
   $par = explode ("::",$line);
@@ -116,9 +117,7 @@ print "</td></tr></table></form>";
 function write_my_file(){
 // To DO RECREATE all column1 and 2 in file from scratch
 global $filename,$array_of_file,$debug,$debug2,$debug3,$counted_columns,$keys;
-$column_1_checked=array();// col1 yes
-$column_2_checked=array();// col2 yes
-$column_3_checked=array();// col3 yes
+
 $column_checked=array();
 $comments=array();
 //if($debug)echo "<h2>HELLO INSIDE writemyfile</h2>";
@@ -144,10 +143,10 @@ for($i=1;$i<$counted_columns;$i++){
 	}
 
 }
-echo"<hr>column_checked=";
-print_r($column_checked);
+if($debug)echo"<hr>column_checked=";
+if($debug)print_r($column_checked);
 
-echo"<hr>";
+if($debug)echo"<hr>";
 /*
 // column 1+++++++++++++++++++++++++++++++++++
 $count1=0;
@@ -201,6 +200,7 @@ if(isSet($_POST["comments"])){
 
 $line_counter=-1;
 foreach ($array_of_file as $line) {
+  //if(strlen($line)<5)continue;
   $line_counter++; // increment the counter
   //$par = $line;
   $par = explode ("::",$line);
@@ -216,10 +216,10 @@ foreach ($array_of_file as $line) {
 	for($i=1;$i<$counted_columns;$i++){
 
 
-		if (in_array($line_counter,$column_checked[$i])){
-			if($debug) print "column_$i_checked";
+		if (@in_array($line_counter,$column_checked[$i])){
+			//if($debug) print_r ($column_checked[$i]);
 			$par[$i]="yes1 ";
-		} else if(!in_array($line_counter,$column_checked[$i]))
+		} else if(@!in_array($line_counter,$column_checked[$i]))
 		{
 			//if(isSet($par[1])) {$par[1]="nop1";}
 			$par[$i]="nop1";
@@ -227,35 +227,7 @@ foreach ($array_of_file as $line) {
 	}	
 
 	/*
-	if (in_array($count,$column_1_checked)){
-		if($debug) print "column_1_checked";
-		$par[1]="yes1 ";
-	} else if(!in_array($count,$column_1_checked))
-	{
-		//if(isSet($par[1])) {$par[1]="nop1";}
-		$par[1]="nop1";
-	}  // always set all par[1] to yes1 or nop1
-  
- 
-	if (in_array($count,$column_2_checked)){
-		if($debug) print "column_2_checked";
-		$par[2]="yes2";
-	} else if(!in_array($count,$column_2_checked))
-	{
-		//if(isSet($par[1])) {$par[1]="nop1";}
-		$par[2]="nop2";
-	}  // always set all par[1] to yes1 or nop1
- 
 
-	if (in_array($count,$column_3_checked)){
-		if($debug) print "column_3_checked";
-		$par[3]="yes3";
-		if($debug3) echo "<h1>column_3_checked $count </h1>";
-	} else if(!in_array($count,$column_3_checked))
-	{
-		//if(isSet($par[1])) {$par[1]="nop1";}
-		$par[3]="nop3";
-	}  // always set all par[1] to yes1 or nop1
  
 	$par[4]=$comments[$count];
 
@@ -266,8 +238,8 @@ foreach ($array_of_file as $line) {
     
   
 } // END of foreach ($array_of_file as $line) {
-  if($debug)echo "<hr color=grey size=20> myarray     $count - ";
-  if($debug) print_r($array_of_file);
+  if($debug)echo "<hr color=grey size=20> myarray     $line_counter - ";
+  if($debug3) print_r($array_of_file);
   if($debug)echo "  -- END ---<br>"; 
 file_put_contents( $filename , ( $array_of_file ) );
 }

@@ -11,8 +11,9 @@ to do:
 
 $filename = "dimotiko_lessons_2018-19.txt";
 $myarray = file($filename);
-$debug=true; //if($debug)
+$debug=false; //if($debug)
 $debug2=false;
+$debug3=false;
 
 $table_column_name[0]="lesson name";
 $table_column_name[1]="10dimA1";
