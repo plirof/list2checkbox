@@ -68,25 +68,24 @@ print '<tr>';
 
 
 // get number of elements in array with count
-$line_counter = -1; // Foreach with counter is probably best here
+$count = -1; // Foreach with counter is probably best here
 foreach ($myarray as $line) {
-  $line_counter++; // increment the counter
+  $count++; // increment the counter
   $par = $line;
   $par = explode ("::",$line);
-  //if($debug){echo "<br>LINE 76 -"; print_r($par);echo "<br>";}
-    print "\n<td>$line_counter - ".$par[0]."</td>";  
+  //if($debug)print_r($par);echo "<br>";
+    print "<td>$count - ".$par[0]."</td>";  
 
-
-	$count_par=0;
-	//if($debug)echo "<hr>".$table_column_name[$keys[$i]];
-	//if($debug){echo "<hr>LINE 84 par= "; print_r($par);}
-	//foreach ($par as $currect_column_value){
-	for($i=1;$i<$counted_columns;$i++){
+	$check1="";
+	$check2="";
+	$check3="";
+	$count_par="";
+	foreach ($par as $currect_column_value){
 		$count_par++;
-		//$check1="";
-		$check[$i]=" ";
-		if(isSet($par[$i])) if (substr($par[$i], 0, 4)=="yes1") {$check[$i]="checked"; }
-		print "<td><input type='checkbox' name='column_".$i."[$line_counter]' value='yes1-line:$line_counter' ".$check[$i]." /> </td>";
+		$check1="";
+		$check[$count_par]=" ";
+		if(isSet($currect_column_value)) if (substr($currect_column_value, 0, 4)=="yes1") {$check[$count_par]="checked"; }
+		print "<td><input type='checkbox' name='column_".$count_par."[$count]' value='yes1-line:$count' ".$check[$count_par]." /> </td>";
 	}	
 
 /*
