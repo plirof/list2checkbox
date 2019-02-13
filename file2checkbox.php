@@ -24,7 +24,7 @@ if(!isSet($debug3))$debug3=false;
 
 
 //$table_column_name[0]
-
+print_r($_POST);
 
 
 if(!isSet($table_column_name[0]))$table_column_name[0]="Name";
@@ -79,10 +79,13 @@ foreach ($myarray as $line) {
 	$check1="";
 	$check2="";
 	$check3="";
+	$count_par="";
 	foreach ($par as $currect_column_value){
+		$count_par++;
 		$check1="";
-		if(isSet($currect_column_value)) 	if (substr($currect_column_value, 0, 4)=="yes1") {$check1="checked"; }
-		print "<td><input type='checkbox' name='column_1[$count]' value='yes1-line:$count' $check1/> </td>";
+		$check[$count_par]=" ";
+		if(isSet($currect_column_value)) if (substr($currect_column_value, 0, 4)=="yes1") {$check[$count_par]="checked"; }
+		print "<td><input type='checkbox' name='column_".$count_par."[$count]' value='yes1-line:$count' ".$check[$count_par]." /> </td>";
 	}	
 
 /*
@@ -123,13 +126,26 @@ if($debug2)var_dump($_POST["column_1"]);
 if($debug)echo "<hr>";
 
 
-
-for($i=1;$i<$counted_columns;$i++){
+/* 191013
+for($i=0;$i<$counted_columns;$i++){
 //foreach ($table_column_name as $name){	
 	$table_th_text=$table_th_text.'<th>'.$table_column_name[$keys[$i]].'</th>';
 	//$table_th_text=$table_th_text.'<th>'.$name.'</th>';
-}
+	$count1=0;
+	if(isSet($_POST["column_1"])){
+		foreach ($_POST["column_1"] as $line_raw)
+		{
+			if($debug)echo substr($line_raw, 10, 15)."<br>";
+			$column_1_checked[$count1]=substr($line_raw, 10, 15);
+			$count1++;
+		}
+	}
 
+
+
+
+}
+*/
 
 // column 1+++++++++++++++++++++++++++++++++++
 $count1=0;
