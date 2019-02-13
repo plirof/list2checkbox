@@ -171,7 +171,7 @@ foreach ($array_of_file as $line) {
   
 }
 print "<input type=hidden name=check_request value=yes>";
-print "<input type=submit>";
+print '<input type=submit   class="fixed freeze" >';
 print "</td></tr></table></form>";
 print "</div>";
 
