@@ -1,0 +1,35 @@
+1912 Titanic Mystery::nop1::nop2
+7 Wonders Treasures of Seven
+A Gypsys Tale - The Tower of Secrets::yes1 ::yes2
+Adventure Chronicles - The Search for Lost Treasure::yes1 
+Agatha Christie 4 50 from Paddington::nop1
+Cate West - The Velvet Keys::yes1 
+Charlaine Harris Dying for Daylight
+Deadtime Stories::yes1 ::yes2
+Detective Stories Hollywood(MANY_FILES)
+Dracula Files
+Empress of the Deep 2 Song of the Blue Whale CE
+Exorcist 2-LeeGT-Games
+Fishdom Spooky Splash::yes1 
+Gardenscapes
+GHOST Chronicles-Phantom of the Renaissance Faire::yes1 
+Hidden Mysteries Buckingham Palace::yes1 
+Hidden Mysteries Vampire Secrets::yes1 ::yes2
+Hidden Object Crosswords::yes1 
+I Spy Spooky Mansion
+Jamestown::nop1::yes2
+LUXOR - Quest for the Afterlife_REDRUM1::nop1
+Luxor Quest for the Afterlife::yes1 
+MidnightMysteries-The Edgar Allan Poe Conspiracy
+Mystery of the Mary Celeste(MANY_FILES)
+Mystic Diary - Lost Brother
+Nightmare Adventures The Witchs Prison
+Princess Isabella A Witch's Curse::yes1 ::yes2
+Redrum 2 Time Lies::nop1::yes2
+Redrum Dead Diary::yes1 ::yes2
+Season of Mystery The Cherry Blossom Murders
+Strange Cases The Tarot Card Mystery
+To the Moon
+Treasure Seekers Visions of Gold
+Vampire Saga Pandoras Box
+Vampireville
