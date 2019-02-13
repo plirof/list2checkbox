@@ -1,6 +1,3 @@
 dim10-A|20180920|ALL CLASSES _ typing_bricks(puzzle)!!!.swf , airtyper_1.swf|::yes1 ::nop2::nop3::
 dim10-A|20180926|A1 : funbrain_com_SimonSees.swf ,funbrain , A2:|::nop1::nop2::nop3::
-dim10-A|20181003|A1,2 :colorgame(sheppardsoftware.com)_preschool.swf (again),buscounting, A1 :Your-Face.swf , A2: coloring_1bear.swf (toys arese)|ΤΕΤΑΡΤΗ::yes1 ::nop2::nop3::
-dim10-A1|20190213|A1: ironstart ""$SWFlocal"pack_A03.html " (δυσκολευτηκαν λιγο στο basket μαθηματικα)|ΤΕΤΑΡΤΗ::nop1::nop2::nop3::
-dim10-A2|20190208|ironstart ""$SWFlocal"pack_A03.html "|ΠΑΡΑΣΚΕΥΗ next::nop1::nop2::nop3::
-dim10-A2|201902118-24|apokries part 1 ramkid,prosklisi : dim15-A, dim15-B, dim15-Γ, dim15-Δ, dim15-E, dim15-ST, dim10-A1, dim10-A2, dim10-B, dim10-Γ1, dim10-Γ2, dim10-Δ, dim10-E1, dim10-E2, dim10-ST1, dim10-ST2, ironstartincognito ""$SWFgiortes"other/ramkid_invitation_party/index.html "$RAMKIDpathprefix"KidsPedia/kids_ePedia32cd/Volume13/index_kd_vol.html ΑΠΟΚΡΙΕΣ-ramkidpedia "$SWFlocal"swf_ramkid_cds2k5/Ramkid_12feb_apokries/index.html "$SWFlocal"pack_A02.html"|ΔΕΥΤΕΡΑ,ΤΡΙΤΗ,ΤΕΤΑΡΤΗ,ΠΕΜΠΤΗ,ΠΑΡΑΣΚΕΥΗ next ::nop1::nop2::nop3::
+

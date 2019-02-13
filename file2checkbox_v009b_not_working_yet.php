@@ -17,7 +17,7 @@ $my_arr[$keys[1]] = "not so much bling";
 */
 
 if(!isSet($filename))$filename = "!hiddenObject_1502_a_list.txt";
-$array_of_file = file($filename);
+$myarray = file($filename);
 if(!isSet($debug))$debug=false; //if($debug)
 if(!isSet($debug2))$debug2=false;
 if(!isSet($debug3))$debug3=false;
@@ -25,7 +25,6 @@ if(!isSet($debug3))$debug3=false;
 
 //$table_column_name[0]
 print_r($_POST);
-//var_dump($_POST);
 
 
 if(!isSet($table_column_name[0]))$table_column_name[0]="Name";
@@ -60,7 +59,7 @@ if(isSet($_POST["check_request"]) && $_POST["check_request"]=="yes") {
 }
 
 if($debug)echo "<h3>ORIGINAL myarray</h3>";
-if($debug) print_r($array_of_file);
+if($debug) print_r($myarray);
 print "<form action='' method='post' name='hello' >\n";
 print"<table border=1>";
 print $table_th_text;
@@ -70,7 +69,7 @@ print '<tr>';
 
 // get number of elements in array with count
 $line_counter = -1; // Foreach with counter is probably best here
-foreach ($array_of_file as $line) {
+foreach ($myarray as $line) {
   $line_counter++; // increment the counter
   $par = $line;
   $par = explode ("::",$line);
@@ -115,11 +114,10 @@ print "</td></tr></table></form>";
 
 function write_my_file(){
 // To DO RECREATE all column1 and 2 in file from scratch
-global $filename,$array_of_file,$debug,$debug2,$debug3,$counted_columns,$keys;
+global $filename,$myarray,$debug,$debug2,$debug3;
 $column_1_checked=array();// col1 yes
 $column_2_checked=array();// col2 yes
 $column_3_checked=array();// col3 yes
-$column_checked=array();
 $comments=array();
 //if($debug)echo "<h2>HELLO INSIDE writemyfile</h2>";
 //if($debug)print_r($_POST);
@@ -129,26 +127,27 @@ if($debug2)var_dump($_POST["column_1"]);
 if($debug)echo "<hr>";
 
 
-
-for($i=1;$i<$counted_columns;$i++){
+/* 191013
+for($i=0;$i<$counted_columns;$i++){
 //foreach ($table_column_name as $name){	
+	$table_th_text=$table_th_text.'<th>'.$table_column_name[$keys[$i]].'</th>';
 	//$table_th_text=$table_th_text.'<th>'.$name.'</th>';
 	$count1=0;
-	if(isSet($_POST["column_".$i])){
-		foreach ($_POST["column_".$i] as $line_raw)
+	if(isSet($_POST["column_1"])){
+		foreach ($_POST["column_1"] as $line_raw)
 		{
 			if($debug)echo substr($line_raw, 10, 15)."<br>";
-			$column_checked[$i][$count1]=substr($line_raw, 10, 15);
+			$column_1_checked[$count1]=substr($line_raw, 10, 15);
 			$count1++;
 		}
 	}
 
-}
-echo"<hr>column_checked=";
-print_r($column_checked);
 
-echo"<hr>";
-/*
+
+
+}
+*/
+
 // column 1+++++++++++++++++++++++++++++++++++
 $count1=0;
 if(isSet($_POST["column_1"])){
@@ -195,38 +194,16 @@ if(isSet($_POST["comments"])){
 		$count4++;
 	}
 }
-*/
 
 
-
-$line_counter=-1;
-foreach ($array_of_file as $line) {
-  $line_counter++; // increment the counter
+$count=-1;
+foreach ($myarray as $line) {
+  $count++; // increment the counter
   //$par = $line;
   $par = explode ("::",$line);
   if($debug2)print "<hr size=5 color=darkgrey > $count _____- ".$par[0]."<br />\n";
   $par[0]=str_replace(array("\r", "\n",PHP_EOL), '', $par[0]);  // remove all line breaks
 
-
-
-	$count_par=0;
-	//if($debug)echo "<hr>".$table_column_name[$keys[$i]];
-	//if($debug){echo "<hr>LINE 84 par= "; print_r($par);}
-	//foreach ($par as $currect_column_value){
-	for($i=1;$i<$counted_columns;$i++){
-
-
-		if (in_array($line_counter,$column_checked[$i])){
-			if($debug) print "column_$i_checked";
-			$par[$i]="yes1 ";
-		} else if(!in_array($line_counter,$column_checked[$i]))
-		{
-			//if(isSet($par[1])) {$par[1]="nop1";}
-			$par[$i]="nop1";
-		}  // always set all par[1] to yes1 or nop1		
-	}	
-
-	/*
 	if (in_array($count,$column_1_checked)){
 		if($debug) print "column_1_checked";
 		$par[1]="yes1 ";
@@ -258,18 +235,16 @@ foreach ($array_of_file as $line) {
 	}  // always set all par[1] to yes1 or nop1
  
 	$par[4]=$comments[$count];
-
-	*/
 	if($debug2)print "<hr color=blue size=5>".$par[2]."<br /> ".implode ("::",$par)."\n";
 	//$par[3]="\r\n";
-	$array_of_file[$line_counter] = implode ("::",$par)."\r\n";// maybe we'll need an PHP_EOL
+	$myarray[$count] = implode ("::",$par)."\r\n";// maybe we'll need an PHP_EOL
     
   
-} // END of foreach ($array_of_file as $line) {
+} // END of foreach ($myarray as $line) {
   if($debug)echo "<hr color=grey size=20> myarray     $count - ";
-  if($debug) print_r($array_of_file);
+  if($debug) print_r($myarray);
   if($debug)echo "  -- END ---<br>"; 
-file_put_contents( $filename , ( $array_of_file ) );
+file_put_contents( $filename , ( $myarray ) );
 }
 
 
