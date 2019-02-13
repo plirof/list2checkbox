@@ -9,12 +9,12 @@ to do:
 -(might not be a point to it) GET text file from url
 */
 
-$filename = "!hiddenObject_1502_a_list.txt";
+$filename = "dimotiko_lessons_2018-19.txt";
 $myarray = file($filename);
 $debug=false; //if($debug)
 $debug2=false;
 
-$table_column0_name="10dimA1";
+$table_column0_name="lesson name";
 $table_column3_name="10dimA2";
 $table_column1_name="10dimB1";
 $table_column2_name="15dimΓ1";

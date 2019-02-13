@@ -1,8 +1,8 @@
 <?php
 /*
 This script takes an ordinary text file and converts it to a text box 
-version : 005 -20150205a
-
+ver: 006 -20150205a (just preparation for 2019 version)
+ver: 005 -20150205a
 to do:
 -variable columns
 -select text file from menu
@@ -48,8 +48,8 @@ foreach ($myarray as $line) {
   $par = $line;
   $par = explode ("::",$line);
   //if($debug)print_r($par);echo "<br>";
- 
-    print "<td>$count - ".$par[0]."</td>"; 
+    print "<td>$count - ".$par[0]."</td>";  
+
 	$check1="";
 	$check2="";
 	$check3="";
@@ -62,6 +62,8 @@ foreach ($myarray as $line) {
 	print "<td><input type='checkbox' name='column_3[$count]' value='yes3-line:$count' $check3 /> </td>";
 	print "<td><input type='text' size=50 name='comments[$count]' value='".$par[4]."' /> </td>";
 	print "</tr><tr>\n";
+
+
 
     //print $par[3]."<br />\n";
   
