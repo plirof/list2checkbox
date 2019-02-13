@@ -14,10 +14,10 @@ $myarray = file($filename);
 $debug=false; //if($debug)
 $debug2=false;
 
-$table_column0_name="Name";
-$table_column1_name="Tried-Checked_";
-$table_column2_name="problem";
-$table_column3_name="Nice for kids";
-$table_column4_name="Comments";
+$table_column_name[0]="Name";
+$table_column_name[1]="Tried-Checked_";
+$table_column_name[2]="problem";
+$table_column_name[3]="Nice for kids";
+$table_column_name[4]="Comments";
 require_once "file2checkbox.php";
 ?>
