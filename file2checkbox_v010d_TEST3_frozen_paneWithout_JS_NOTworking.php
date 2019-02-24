@@ -1,3 +1,16 @@
+<?php 
+
+if(!isSet($filename))$filename = "!hiddenObject_1502_a_list.txt";
+if(!isSet($seperator))$seperator = "|_|";
+if(!isSet($column0_wrap))$column0_wrap = 400; // setting this to 0 will reduce html file size
+$array_of_file = file($filename);
+if(!isSet($debug))$debug=false; //if($debug)
+if(!isSet($debug2))$debug2=false;
+if(!isSet($debug3))$debug3=false;
+//$table_column_name[0]
+if($debug3)print_r($_POST);
+//var_dump($_POST);
+?>
 <html>
 <head>
 <!--
@@ -8,7 +21,7 @@
   190223a : added seperator and first entry is <B></B>
   190213f - freeze panes NOTE: Thisneed MODERN browser (does NOTwork on firefox 17)  
 -->
-	<meta charset="utf-8">
+<meta charset="utf-8">
 
 
 <style>
@@ -45,17 +58,21 @@ td, th {
 .fixed.freeze {
   z-index: 10;
   position: relative;
+  position: sticky; top: 0px; margin-top: 100px; width: 100px; height: 20px; background-color: cyan;
 }
 
 .fixed.freeze_vertical {
   z-index: 5;
   position: relative;
+  position: sticky; top: 0px; margin-top: 100px; width: 100px; height: 20px; background-color: cyan;
 }
 
 .fixed.freeze_horizontal {
-  z-index: 1;
-  position: relative;
+  z-index1111: 1;
+  position111: relative;
 }
+
+
 
 
 /* filter table stuff */
@@ -65,6 +82,7 @@ td, th {
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
+  position: sticky; top: 0px; margin-top: 100px; width: 100px; height: 20px; background-color: cyan;
 
 }
 
@@ -87,21 +105,41 @@ td, th {
   background-color: #f1f1f1;
 }
 
+<?php 
+if($column0_wrap>30 ) 
+  {
+    echo "
+  .css_div_table_freeze{
+    #width11111: 100px; 
+    overflow-x:scroll;  
+    margin-left:".$column0_wrap."px; 
+    overflow-y:visible;
+    padding-bottom:1px;
+    text-overflow: ellipsis;
+  }
+
+
+
+
+  .css_column0_freeze{
+              width: ".$column0_wrap."px; 
+           
+              position:absolute; 
+              word-wrap: break-word;
+              left:0;
+
+              border-right: 0px none black; 
+              border-top-width:3px; /*only relevant for first row*/
+              margin-top:-3px; /*compensate for top border*/
+  }
+  ";
+}
+?>
 .css_freeze{
   position: sticky; top: 0px; margin-top: 100px; width: 100px; height: 20px; background-color: cyan;
 }
 
-.css_column0_freeze{
-            width: 100px; 
-         
-            position:absolute; 
-            word-wrap: break-word;
-            left:0;
 
-            border-right: 0px none black; 
-            border-top-width:3px; /*only relevant for first row*/
-            margin-top:-3px; /*compensate for top border*/
-}
 
 </style>
 
@@ -126,18 +164,7 @@ $my_arr[$keys[1]] = "not so much bling";
 
 */
 
-if(!isSet($filename))$filename = "!hiddenObject_1502_a_list.txt";
-if(!isSet($seperator))$seperator = "|_|";
-if(!isSet($column0_wrap))$column0_wrap = 400; // setting this to 0 will reduce html file size
-$array_of_file = file($filename);
-if(!isSet($debug))$debug=false; //if($debug)
-if(!isSet($debug2))$debug2=false;
-if(!isSet($debug3))$debug3=false;
 
-
-//$table_column_name[0]
-if($debug3)print_r($_POST);
-//var_dump($_POST);
 
 
 if(!isSet($table_column_name[0]))$table_column_name[0]="Name";
@@ -152,12 +179,12 @@ $keys = array_keys($table_column_name);
 
 $table_th_text="\n";
 
-$table_th_text=$table_th_text."\n".'<th style="background-color:white"  class="fixed freeze" >'.$table_column_name[$keys[0]].'</th>'; // first column static
+$table_th_text=$table_th_text."\n".'<th style="background-color:white"  class="fixed freeze css_column0_freeze" >'.$table_column_name[$keys[0]].'</th>'; // first column static
 ############################################
 
 for($i=1;$i<$counted_columns;$i++){
 //foreach ($table_column_name as $name){	
-	$table_th_text=$table_th_text."\n".'<th  style="background-color:white" class="fixed freeze_vertical" >'.$table_column_name[$keys[$i]].'</th>';
+	$table_th_text=$table_th_text."\n".'<th  style="background-color:white" class="fixed freeze_vertical css_freeze" >'.$table_column_name[$keys[$i]].'</th>';
 	//$table_th_text=$table_th_text.'<th>'.$name.'</th>';
 }
 
@@ -178,7 +205,7 @@ if(isSet($_POST["check_request"]) && $_POST["check_request"]=="yes") {
 if($debug)echo "<h3>ORIGINAL myarray</h3>";
 if($debug) print_r($array_of_file);
 print "<form action='' method='post' name='hello' >\n";
-echo '<div id="scrolling_table_1" class="scrolly_table" style="max-width:100%x; max-height:100%">	';
+echo '<div id="scrolling_table_1" class="scrolly_table css_div_table_freeze" style="max-width:100%x; max-height:100%">	';
 print '<table border=1 id="myTable" >';
 print $table_th_text;
 print '<tr class="tr_shaded" >';
