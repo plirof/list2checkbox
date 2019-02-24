@@ -2,8 +2,8 @@
 <head>
 <!--
   
-  
-  190223 : added seperator and first entry is <B></B>
+  190223b : $column0_wrap  added wraping to all column 0 entries
+  190223a : added seperator and first entry is <B></B>
   190213f - freeze panes NOTE: Thisneed MODERN browser (does NOTwork on firefox 17)  
 -->
 	<meta charset="utf-8">
@@ -79,6 +79,7 @@ $my_arr[$keys[1]] = "not so much bling";
 
 if(!isSet($filename))$filename = "!hiddenObject_1502_a_list.txt";
 if(!isSet($seperator))$seperator = "|_|";
+if(!isSet($column0_wrap))$column0_wrap = 400; // setting this to 0 will reduce html file size
 $array_of_file = file($filename);
 if(!isSet($debug))$debug=false; //if($debug)
 if(!isSet($debug2))$debug2=false;
@@ -143,12 +144,13 @@ foreach ($array_of_file as $line) {
   $par = $line;
   $par = explode ("::",$line);
   //if($debug){echo "<br>LINE 76 -"; print_r($par);echo "<br>";}
-  
+
   
   $par0_exploded=explode ($seperator,$par[0]  );
   $par0_exploded[0]="<b>".$par0_exploded[0]."</b>";
   $par[0]=implode($seperator." ",$par0_exploded); //space used for helping text wrap
-  
+  if($column0_wrap>0) $par[0]="<div style='background-color: lightgrey;width: ".$column0_wrap."px;word-wrap: break-word;'>". $par[0]."</div>";
+
   print "\n<td  class=\"fixed freeze_horizontal\" >$line_counter - ".$par[0]."</td>";  
 
 
@@ -185,6 +187,8 @@ print "<input type=hidden name=check_request value=yes>";
 print '<input type=submit   class="fixed freeze" >';
 print "</td></tr></table></form>";
 print "</div>";
+
+
 
 
 
