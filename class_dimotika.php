@@ -9,8 +9,12 @@ to do:
 -(might not be a point to it) GET text file from url
 */
 
+
 $filename = "dimotiko_lessons_2018-19.txt";
 $myarray = file($filename);
+$column0_wrap=400;
+
+
 $debug=false; //if($debug)
 $debug2=false;
 $debug3=false;
