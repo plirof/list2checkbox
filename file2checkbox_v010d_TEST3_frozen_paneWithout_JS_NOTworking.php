@@ -121,7 +121,7 @@ if($column0_wrap>30 )
 
 
 
-  .css_column0_freeze{
+  .css_column0_freeze1{
               width: ".$column0_wrap."px; 
            
               position:absolute; 
@@ -179,7 +179,7 @@ $keys = array_keys($table_column_name);
 
 $table_th_text="\n";
 
-$table_th_text=$table_th_text."\n".'<th style="background-color:white"  class="fixed freeze css_column0_freeze" >'.$table_column_name[$keys[0]].'</th>'; // first column static
+$table_th_text=$table_th_text."\n".'<th style="background-color:white"  class="fixed freeze css_column0_freeze css_freeze" >'.$table_column_name[$keys[0]].'</th>'; // first column static
 ############################################
 
 for($i=1;$i<$counted_columns;$i++){
