@@ -1,7 +1,8 @@
 <html>
 <head>
 <!--
-  
+
+  JS fiddle with horizontal freeze working : http://jsfiddle.net/tf7jx4sq/
   190223d : added real time table filter
   190223b : $column0_wrap  added wraping to all column 0 entries
   190223a : added seperator and first entry is <B></B>
@@ -64,6 +65,7 @@ td, th {
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
+
 }
 
 #myTable {
@@ -85,7 +87,21 @@ td, th {
   background-color: #f1f1f1;
 }
 
+.css_freeze{
+  position: sticky; top: 0px; margin-top: 100px; width: 100px; height: 20px; background-color: cyan;
+}
 
+.css_column0_freeze{
+            width: 100px; 
+         
+            position:absolute; 
+            word-wrap: break-word;
+            left:0;
+
+            border-right: 0px none black; 
+            border-top-width:3px; /*only relevant for first row*/
+            margin-top:-3px; /*compensate for top border*/
+}
 
 </style>
 
@@ -184,7 +200,7 @@ foreach ($array_of_file as $line) {
   $par[0]=implode($seperator." ",$par0_exploded); //space used for helping text wrap
   if($column0_wrap>0) $par[0]="<div style='background-color: lightgrey;width: ".$column0_wrap."px;word-wrap: break-word;'>". $par[0]."</div>";
 
-  print "\n<td  class=\"fixed freeze_horizontal\" >$line_counter - ".$par[0]."</td>";  
+  print "\n<td  class=\"fixed freeze_horizontal css_column0_freeze \" >$line_counter - ".$par[0]."</td>";  
 
 
 	$count_par=0;
@@ -218,7 +234,7 @@ foreach ($array_of_file as $line) {
 }
 print "<input type=hidden name=check_request value=yes>";
 print '<input type=submit   class="fixed freeze" >';
-print '<input type="text" id="myRTFilterInput" onkeyup="myRTFilterFunction()" placeholder="Search for names..">';
+print '<input type="text" id="myRTFilterInput" class="fixed freeze" onkeyup="myRTFilterFunction()" placeholder="Search for names..">';
 print "</td></tr></table></form>";
 print "</div>";
 
@@ -359,6 +375,7 @@ file_put_contents( $filename , ( $array_of_file ) );
 
 ?>
 <script>
+  /*
 function freeze_pane_listener(what_is_this, table_class) {
   // Wrapping a function so that the listener can be defined
   // in a loop over a set of scrolling table id's.
@@ -472,7 +489,7 @@ for (i = 0; i < scrolling_table_div_ids.length; i++) {
   scroll_div = document.getElementById(scrolling_table_div_ids[i]);
   scroll_div.addEventListener("scroll", freeze_pane_listener(scroll_div, scrolling_table_div_ids[i]));
 }
-
+*/
 function myRTFilterFunction() {
   // Declare variables 
   var input, filter, table, tr, td, i, txtValue;
